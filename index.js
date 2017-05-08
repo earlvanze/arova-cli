@@ -1,5 +1,5 @@
 var moving = false;
-var socket = io.connect('http://localhost:3000');
+var socket = io.connect(window.location.host);
 var angle= 1;
 $('#view').hide();
 $('#submit').on('click', function(event){
